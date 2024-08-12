@@ -3,7 +3,8 @@ const mongodb=require("mongodb")
 const mongoose=require("mongoose")
 const studentrouter=require("./routes/students")
 
-const uri="mongodb://localhost:27017/CRUD"
+// const uri="mongodb://localhost:27017/CRUD"
+const uri="mongodb://localhost:27020,localhost:27021,localhost:27022/cbitit?replicaSet=m101";
 const port =3000
 const app=express()
 mongoose.connect(uri)
